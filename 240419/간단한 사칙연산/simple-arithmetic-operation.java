@@ -8,6 +8,6 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
         
-        System.out.println((a+b) + "\n" + (a-b) + "\n" + (a/b) + "\n" + (a%b) );
+        System.out.print((a+b) + "\n" + (a-b) + "\n" + (a/b) + "\n" + (a%b) );
     }
 }
