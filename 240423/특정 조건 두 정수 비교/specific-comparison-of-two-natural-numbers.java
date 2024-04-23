@@ -9,5 +9,6 @@ public class Main {
 
         if (a < b) System.out.print(1 + " " + 0);
         else if (a == b) System.out.print(0 + " " + 1);
+        else System.out.print(0 + " " + 0);
     }
 }
