@@ -9,7 +9,7 @@ public class Main {
         int b1 = sc.nextInt();
         int b2 = sc.nextInt();
 
-        if (a1 > b1 && b1 > b2) System.out.print(1);
+        if (a1 > b1 && a2 > b2) System.out.print(1);
         else System.out.print(0);
 
     }
