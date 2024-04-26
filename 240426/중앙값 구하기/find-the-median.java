@@ -7,9 +7,11 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
-
+        
         if (a > b && a < c) System.out.print(a);
         else if (b > a && b < c) System.out.print(b);
+        else if (a > c && a < b ) System.out.print(a);
+        else if (b > c && a < c) System.out.print(b);
         else System.out.print(c);
     }
 }
