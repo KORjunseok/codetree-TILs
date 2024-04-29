@@ -10,8 +10,6 @@ public class Main {
 
         BigDecimal res = BigDecimal.valueOf(a).divide(BigDecimal.valueOf(b), 21, BigDecimal.ROUND_HALF_UP);
 
-        // double res = (double) a / b;
-
         System.out.printf("%.20f", res);
     }
 }
