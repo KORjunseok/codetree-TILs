@@ -1,21 +1,30 @@
 import java.util.Scanner;
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 
 public class Main {
     public static void main(String[] args) {
-        // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        
+        // 변수 선언
+        int a, b;
 
-        // BigDecimal res = BigDecimal.valueOf(a).divide(BigDecimal.valueOf(b), 21, BigDecimal.ROUND_HALF_UP);
+        // 입력
+        a = sc.nextInt();
+        b = sc.nextInt();
 
-        BigDecimal numerator = new BigDecimal(a);
-        BigDecimal denominator = new BigDecimal(b);
-
-       BigDecimal res = numerator.divide(denominator, 21, RoundingMode.HALF_UP);
-        System.out.printf("%.20f", res);
-
+        // 정수 부분을 먼저 출력합니다.
+        System.out.print(a / b + ".");
+        
+        // a를 b로 나눈 나머지를 시작으로
+        // 소수점 자리를 하나씩 계산합니다.
+        a %= b;
+        for(int i = 0; i < 20; i++) {
+            // 나머지에 10 곱한 값을 기준으로
+            // b로 나누었을 떄의 몫을 구해줍니다.
+            a *= 10;
+            System.out.print(a / b);
+            
+            // a를 b로 나눈 나머지를 게속 갱신해줍니다.
+            a %= b;
+        }
     }
 }
