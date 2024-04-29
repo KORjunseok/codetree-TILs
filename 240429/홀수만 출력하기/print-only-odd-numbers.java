@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i <= n; i++) {
             int num = sc.nextInt();
             if (num % 3 == 0) 
             System.out.println(num);
