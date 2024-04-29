@@ -14,8 +14,7 @@ public class Main {
         BigDecimal numerator = new BigDecimal(a);
         BigDecimal denominator = new BigDecimal(b);
 
-        // Perform the division with 21 decimal places precision and rounding
-        BigDecimal res = numerator.divide(denominator, 21, RoundingMode.HALF_UP);
+       BigDecimal res = numerator.divide(denominator, 21, RoundingMode.HALF_UP);
         System.out.printf("%.20f", res);
 
     }
