@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.math.BigDecimal;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,8 +8,9 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        double res = (double) a / b;
-        //  Math.floor(res)
+        BigDecimal res = BigDecimal.valueOf(a).divide(BigDecimal.valueOf(b), 21, BigDecimal.ROUND_HALF_UP);
+
+        // double res = (double) a / b;
 
         System.out.printf("%.20f", res);
     }
