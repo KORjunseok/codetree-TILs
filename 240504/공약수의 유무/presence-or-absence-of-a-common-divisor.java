@@ -15,13 +15,11 @@ public class Main {
             if (temp1 % i == 0 && temp2 % i == 0) 
             satisfied = true;
         }
-        if (satisfied = true)
+        if (satisfied == true)
         System.out.print(1);
-        else if (satisfied = false)
+        else if (satisfied == false)
         System.out.print(0);
         
-        
-
 
     }
 }
