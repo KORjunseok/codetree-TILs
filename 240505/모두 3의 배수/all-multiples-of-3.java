@@ -13,9 +13,9 @@ public class Main {
             satisfied = false;
         }
 
-        if (satisfied = true)
+        if (satisfied == true)
         System.out.print(1);
-        else if (satisfied = false);
+        else if (satisfied == false);
         System.out.print(0);
     }
 }
