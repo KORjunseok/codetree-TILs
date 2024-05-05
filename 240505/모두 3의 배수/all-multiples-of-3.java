@@ -15,7 +15,7 @@ public class Main {
 
         if (satisfied = true)
         System.out.print(1);
-        else 
+        else if (satisfied = false);
         System.out.print(0);
     }
 }
