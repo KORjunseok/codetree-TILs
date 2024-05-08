@@ -8,11 +8,12 @@ public class Main {
         
         for (int i = 1; i <= 5; i++) {
             int n = sc.nextInt();
-            if (n % 3 != 0)
+            if (n % 3 != 0) {
             satisfied = true;
+            }
         }
 
-        if (satisfied = true)System.out.print(1);
+        if (satisfied == false)System.out.print(1);
         else System.out.print(0);
     }
 }
