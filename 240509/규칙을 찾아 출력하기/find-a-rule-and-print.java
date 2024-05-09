@@ -8,7 +8,7 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if (n >= 3 && i != 0 && i != n - 1 && j < i) 
+                if (n >= 3 && i != 0 && i != n - 1 && j <= i) 
                 System.out.print("  ");
                 else
                 System.out.print("* ");
