@@ -11,13 +11,12 @@ public class Main {
             if (b - a == 0) {
                 for (int j = 0; j < 1; j++) {
                     System.out.print(b - (a * j) + " * " + (i + 1) + " = " + (b - (a * j)) * (i + 1));
-              
                 }
                 System.out.println();
             }
             else {
-                for (int j = 0; j < b / 2; j++) {
-                System.out.print(b - (a * j) + " * " + (i + 1) + " = " + (b - (a * j)) * (i + 1));
+                for (int j = 0; j < b - a; j++) {
+                System.out.print(b - (2 * j) + " * " + (i + 1) + " = " + (b - (2 * j)) * (i + 1));
                 if (j != (b / 2) - 1)
                 System.out.print(" / ");
             }
