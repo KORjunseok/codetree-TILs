@@ -15,7 +15,7 @@ public class Main {
                 System.out.println();
             }
             else {
-                for (int j = 0; j < b - a; j++) {
+                for (int j = 0; j < (b - a) - 1; j++) {
                 System.out.print(b - (2 * j) + " * " + (i + 1) + " = " + (b - (2 * j)) * (i + 1));
                 if (j != (b / 2) - 1)
                 System.out.print(" / ");
