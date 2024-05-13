@@ -14,6 +14,7 @@ public class Main {
                 if (j != 1)
                 System.out.print(" / ");
                 }
+                System.out.println();
             }
             else {
                 for (int j = 0; j < b / 2; j++) {
