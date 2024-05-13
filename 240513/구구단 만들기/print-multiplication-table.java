@@ -11,8 +11,7 @@ public class Main {
             if (b - a == 0) {
                 for (int j = 0; j < 1; j++) {
                     System.out.print(b - (a * j) + " * " + (i + 1) + " = " + (b - (a * j)) * (i + 1));
-                if (j != 1)
-                System.out.print(" / ");
+              
                 }
                 System.out.println();
             }
