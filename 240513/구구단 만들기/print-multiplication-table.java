@@ -8,12 +8,22 @@ public class Main {
         int b = sc.nextInt();
 
         for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < b / 2; j++) {
+            if (b - a == 0) {
+                for (int j = 0; j < 1; j++) {
+                    System.out.print(b - (a * j) + " * " + (i + 1) + " = " + (b - (a * j)) * (i + 1));
+                if (j != 1)
+                System.out.print(" / ");
+                }
+            }
+            else {
+                for (int j = 0; j < b / 2; j++) {
                 System.out.print(b - (a * j) + " * " + (i + 1) + " = " + (b - (a * j)) * (i + 1));
                 if (j != (b / 2) - 1)
                 System.out.print(" / ");
             }
             System.out.println();
+            }
+            
         }
     }
 }
