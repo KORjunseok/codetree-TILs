@@ -10,11 +10,11 @@ public class Main {
             int a = sc.nextInt();
             int b = sc.nextInt();
 
-            int sum = 1;
+            int ans = 1;
             for (int j = a; j <= b; j++) {
-                sum *= j;
+                ans *= j;
             }
-            System.out.println(sum);
+            System.out.println(ans);
         }
     }
 }
