@@ -10,8 +10,10 @@ public class Main {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(cnt);
-                if (cnt == 'Z')
-                cnt = 'A';
+                if (cnt == 'Z') {
+                    cnt = (int)64;
+
+                }
                 cnt++;
             }
             System.out.println();
