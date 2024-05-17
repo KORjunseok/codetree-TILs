@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int[] arr = new int[10];
         int cnt = 0;
-        int plus = 0;
+        double plus = 0;
 
         for (int i = 0; i < 10; i++) {
             arr[i] = sc.nextInt();
@@ -15,7 +15,7 @@ public class Main {
             plus += arr[i];
             cnt++;
         }
-        System.out.print(plus + " ");
+        System.out.print((int) plus + " ");
         System.out.printf("%.1f", (double) (plus / cnt));
 
     }
