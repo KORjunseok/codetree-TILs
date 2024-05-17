@@ -6,14 +6,12 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[100];
-        // int[] sum = new int[n];
         int sum = 0;
         int cnt = 0;
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < 4; j++) {
                 arr[j] = sc.nextInt();
-                // sum[i] += arr[j];
                 sum += arr[j];
             }
             if ((sum / 4) >= 60) {
