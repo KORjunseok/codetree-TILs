@@ -11,12 +11,13 @@ public class Main {
 
         for (int i = 0; i < 10; i++) {
             arr[i] = sc.nextInt();
-            if (arr[i] % 2 == 0)
+        }
+        for (int i = 1; i <= 10; i += 2) {
             sum += arr[i];
-            if (arr[i] % 3 == 0) {
+        }
+        for (int i = 2; i <= 10; i += 3) {
                 avg += arr[i];
                 cnt++;
-            }
         }
         System.out.printf("%d %.1f",sum, (avg / cnt) );
 
