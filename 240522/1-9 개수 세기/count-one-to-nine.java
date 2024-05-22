@@ -11,7 +11,7 @@ public class Main {
         for (int i = 1; i <= n; i++) {
             arr[i] = sc.nextInt();
         }
-        for (int i = 1; i < 10; i++) {
+        for (int i = 1; i <= n; i++) {
             cntArr[arr[i]]++;
         }
         for (int i = 1; i < 10; i++) {
