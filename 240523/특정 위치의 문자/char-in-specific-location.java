@@ -9,7 +9,7 @@ public class Main {
         char[] arr = new char[]{'L', 'E', 'B', 'R', 'O', 'S'};
         int cnt = -1;
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i <= 5; i++) {
             if (arr[i] == a) {
                 cnt = i;
             }
