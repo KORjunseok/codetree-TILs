@@ -10,12 +10,15 @@ public class Main {
         for (int i = 0; i < 5; i++) {
             char a = sc.next().charAt(0);
             if (arr[i] == a) {
-                System.out.print(i);
-                cnt = 0;
+                // System.out.print(i);
+                cnt = i;
                 break;
             }
         }
         if (cnt == -1)
         System.out.print("None");
+        else 
+        System.out.print(cnt);
+
     }
 }
