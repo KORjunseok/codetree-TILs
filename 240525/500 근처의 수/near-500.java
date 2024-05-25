@@ -15,7 +15,7 @@ public class Main {
 
         for (int i = 1; i < 10; i++) {
             if (arr[i] < 500) {
-                if (minVal < arr[i - 1]) {
+                if (minVal < arr[i]) {
                     minVal = arr[i];
                 }
             }
