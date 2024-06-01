@@ -1,26 +1,35 @@
-import java.util.Scanner; 
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int cnt1 = 0;
-        int cnt2 = 0;
+        int n = sc.nextInt();
+        int m = sc.nextInt();
 
-        for (int i = 0; i < a; i++) {
-            for (int j = 0; j < b; j++) {
-                if (j == 0) {
-                System.out.print(i + " ");
+        int[][] arr = new int[100][100];
+
+
+        int count = 0;
+        for(int col = 0; col < m; col++) {
+            if (col % 2 == 0){
+                for(int row = 0; row < n; row++){
+                    arr[row][col] = count;
+                    count++;
                 }
-                if (j % 2 == 0) {
-                System.out.print(cnt1 + " ");
+            }
+            else {
+                for(int row = n - 1; row >= 0; row--){
+                    arr[row][col] = count;
+                    count++;
                 }
-                cnt1++;
+            }
+        }
+                
+        for(int row = 0; row < n; row++) {
+            for(int col = 0; col < m; col++) {
+                System.out.print(arr[row][col] + " ");
             }
             System.out.println();
         }
-
     }
 }
