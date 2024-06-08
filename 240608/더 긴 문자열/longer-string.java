@@ -7,7 +7,7 @@ public class Main {
         String a = sc.next();
         String b = sc.next();
         int ia = a.length();
-        int ib = a.length();
+        int ib = b.length();
 
         if (ia == ib)
         System.out.print("same");
