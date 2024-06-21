@@ -10,12 +10,12 @@ public class Main {
 
         for (int i = 0; i < a.length(); i++) {
             arr[(a.length() - i)] = a.charAt(i);
+            if (arr[i] == ' ')
+            break;
         }
 
         for (int i = 1; i <= b; i++) {
             System.out.print(arr[i]);
-            if (arr[i] == ' ')
-            break;
 
         }
     }
