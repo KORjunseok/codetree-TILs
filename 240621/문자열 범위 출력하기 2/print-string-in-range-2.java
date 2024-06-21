@@ -2,21 +2,22 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
-        String a = sc.next();
-        int b = sc.nextInt();
-        char[] arr = new char[100];
+        
+        String str;
+        
+        str = sc.next();
 
-        for (int i = 0; i < a.length(); i++) {
-            arr[(a.length() - i)] = a.charAt(i);
-            if (arr[i] == ' ')
-            break;
-        }
+        int a = sc.nextInt();
 
-        for (int i = 1; i <= b; i++) {
-            System.out.print(arr[i]);
+        int len = str.length();
+        int cnt = 0;
 
+        for(int i = len - 1; i >= 0; i--) {
+            if(cnt >= a)
+                break;
+            System.out.print(str.charAt(i));
+            cnt++;
         }
     }
 }
