@@ -13,7 +13,7 @@ public class Main {
         }
 
         for (int i = 1; i <= b; i++) {
-            if (arr[i] != " ")
+            if (arr[i] != ' ')
             System.out.print(arr[i]);
         }
     }
