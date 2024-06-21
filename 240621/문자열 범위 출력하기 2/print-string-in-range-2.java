@@ -6,6 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String a = sc.next();
         int b = sc.nextInt();
+        char[] arr = new char[100];
 
         for (int i = 0; i < a.length(); i++) {
             arr[(a.length() - i)] = a.charAt(i);
