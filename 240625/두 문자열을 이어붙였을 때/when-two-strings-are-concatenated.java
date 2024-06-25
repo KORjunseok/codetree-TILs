@@ -6,11 +6,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String a = sc.next();
         String b = sc.next();
-        
-        // System.out.print(a+b);
-        // System.out.print(b+a);
+        a = a.trim();
+        b = b.trim();
 
-        if ((a + b) != (b + a))
+        String c = a + b;
+        String d = b + a;
+
+        if (c.equals(d))
         System.out.print("true");
         else 
         System.out.print("false");
