@@ -8,11 +8,19 @@ public class Main {
         int cntE = 0;
         int cntB = 0;
         
-        if (a.contains("ee"))
-        cntE++;
-        if (a.contains("eb"))
-        cntB++;
+        for (int i = 1; i < a.length(); i++) {
+            if ((a.charAt(i) == 'e') && (a.charAt(i - 1) == 'e'))
+            cntE++;
+            if ((a.charAt(i) == 'b') && (a.charAt(i - 1) == 'e'))
+            cntB++;
+        }
         
+
+        // if (a.contains("ee"))
+        // cntE++;
+        // if (a.contains("eb"))
+        // cntB++;
+
         System.out.print(cntE + " " + cntB);
 
     }
