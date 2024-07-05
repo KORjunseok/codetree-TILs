@@ -2,21 +2,29 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
-        String a = sc.next();
 
-        for (int i = 0; i < 100; i++) {
-            int b = sc.nextInt();
-            if (b > a.length()) {
-            a = a.substring(0, a.length() - 1);
-            }
-            else a = a.substring(0, b) + a.substring(b + 1);
+        // 문자열을 입력받습니다.
+        String str = sc.next();
+
+        // 문자열의 길이를 구합니다.
+        int len = str.length();
+
+        // 문자가 하나 남을 때까지 반복합니다.
+        while(len > 1) {
+            // 정수를 입력받습니다.
+            int a = sc.nextInt();
             
-            System.out.println(a);
-            if (a.length() == 1)
-            break;
+            // 정수가 문자열의 길이 이상이면 마지막 문자를 가리키게 변경합니다.
+            if(a >= len)
+                a = len - 1;
+            
+            // a번 자리의 원소를 제거합니다.
+            str = str.substring(0, a) + str.substring(a + 1);
+            len--;
+            
+            // 현재 문자열을 출력합니다.
+            System.out.println(str);
         }
-
     }
 }
