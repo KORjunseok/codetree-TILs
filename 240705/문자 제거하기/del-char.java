@@ -14,6 +14,8 @@ public class Main {
             else a = a.substring(0, b) + a.substring(b + 1);
             
             System.out.println(a);
+            if (a.length() == 1)
+            break;
         }
 
     }
