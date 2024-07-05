@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String a = sc.next();
 
-        for (int i = a.length(); i >= 0; i--) {
+        for (int i = 0; i < 20; i++) {
             int b = sc.nextInt();
             if (b > a.length()) {
             a = a.substring(0, a.length() - 1);
