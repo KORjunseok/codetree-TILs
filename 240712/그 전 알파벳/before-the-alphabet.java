@@ -7,6 +7,8 @@ public class Main {
         char a = sc.next().charAt(0);
         if (a == 'a')
         a = 'z';
+        if (a == 'z')
+        a == 'y';
         System.out.print((char)((int)a - 1));
     }
 }
