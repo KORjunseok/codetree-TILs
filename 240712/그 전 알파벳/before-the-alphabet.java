@@ -8,7 +8,7 @@ public class Main {
         if (a == 'a')
         a = 'z';
         if (a == 'z')
-        a == 'y';
+        a = 'y';
         System.out.print((char)((int)a - 1));
     }
 }
