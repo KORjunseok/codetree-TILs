@@ -6,9 +6,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         char a = sc.next().charAt(0);
         if (a == 'a')
-        a = 'z';
-        if (a == 'z')
-        a = 'y';
+        System.out.print('z');
+        else
         System.out.print((char)((int)a - 1));
     }
 }
