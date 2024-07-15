@@ -6,7 +6,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String a = sc.next();
         char[] arr = new char[100];
-        String b = "";
         int c = 0;
 
         for (int i = 0; i < a.length(); i++) {
@@ -14,10 +13,7 @@ public class Main {
             if((arr[i] >= '0') && (arr[i] <= '9'))
             c += arr[i] - '0';
         }
-        // b = (float)b;
-        // for (int i = 0; i < b.length(); i++) {
-        //     c += b.charAt(i);
-        // }
+
         System.out.print(c);
     }
 }
