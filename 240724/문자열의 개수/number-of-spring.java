@@ -15,7 +15,7 @@ public class Main {
             cnt++;
         }
         System.out.println(cnt);
-        for (int i = 0; i < 10; i += 2) {
+        for (int i = 0; i < cnt; i += 2) {
             if (arr[i] == null)
             break;
             System.out.println(arr[i]);
