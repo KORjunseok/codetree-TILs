@@ -9,7 +9,7 @@ int main() {
     if (n < 0) {
         cout << "ice";
     }
-    else if (n > 100) {
+    else if (n >= 100) {
         cout << "vapor";
     }
     else {
